@@ -5,5 +5,18 @@
         <file>fondoNegroPoVacias.jpg</file>
         <file>jugador.png</file>
         <file>blast.png</file>
+        <file>balaEnemigo.png</file>
+        <file>enemigoDestruido.png</file>
+        <file>INVADERS.png</file>
+        <file>labelInfo.png</file>
+        <file>labelJugar.png</file>
+        <file>labelPuntajeP.png</file>
+        <file>labelTiempoP.png</file>
+        <file>labelVidasP.png</file>
+        <file>PantallaJuegoPrincipal.png</file>
+        <file>pantallaMenu.png</file>
+        <file>PantallaInformacion.png</file>
+        <file>labelVolver.png</file>
+        <file>labelERestantesP.png</file>
     </qresource>
 </RCC>

@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#centralwidget{
-background:black;
+background-image:url(://PantallaJuegoPrincipal.png);
 }
 
 #frame{
@@ -24,7 +24,7 @@ background:blacl;
 }
 
 #enemigos{
-color:white;
+background-image:url(://labelERestantesP.png)
 }
 
 #eRestantes{
@@ -36,11 +36,11 @@ color:white
 }
 
 #puntaje{
-color:white
+background-image:url(://labelPuntajeP.png);
 }
 
 #tiempo{
-color:white
+background-image:url(://labelTiempoP.png);
 }
 
 #eTiempo{
@@ -48,7 +48,7 @@ color:white
 }
 
 #vidas{
-color:white
+background-image:url(://labelVidasP.png);
 }
 
 #eVidas{
@@ -75,21 +75,21 @@ color:white
    <widget class="QLabel" name="enemigos">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>80</y>
-      <width>141</width>
-      <height>16</height>
+      <x>780</x>
+      <y>30</y>
+      <width>150</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
-     <string>Enemigos Restantes:</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="eRestantes">
     <property name="geometry">
      <rect>
-      <x>810</x>
-      <y>100</y>
+      <x>910</x>
+      <y>40</y>
       <width>58</width>
       <height>16</height>
      </rect>
@@ -101,21 +101,21 @@ color:white
    <widget class="QLabel" name="puntaje">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>140</y>
-      <width>141</width>
-      <height>16</height>
+      <x>780</x>
+      <y>70</y>
+      <width>150</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
-     <string>Puntaje:</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="ePuntaje">
     <property name="geometry">
      <rect>
-      <x>810</x>
-      <y>160</y>
+      <x>880</x>
+      <y>80</y>
       <width>58</width>
       <height>16</height>
      </rect>
@@ -127,21 +127,21 @@ color:white
    <widget class="QLabel" name="tiempo">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>200</y>
-      <width>58</width>
-      <height>16</height>
+      <x>780</x>
+      <y>110</y>
+      <width>150</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
-     <string>Tiempo:</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="eTiempo">
     <property name="geometry">
      <rect>
-      <x>810</x>
-      <y>220</y>
+      <x>870</x>
+      <y>120</y>
       <width>58</width>
       <height>16</height>
      </rect>
@@ -153,21 +153,21 @@ color:white
    <widget class="QLabel" name="vidas">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>270</y>
-      <width>58</width>
-      <height>16</height>
+      <x>780</x>
+      <y>150</y>
+      <width>150</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
-     <string>Vidas:</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="eVidas">
     <property name="geometry">
      <rect>
-      <x>810</x>
-      <y>290</y>
+      <x>870</x>
+      <y>160</y>
       <width>58</width>
       <height>16</height>
      </rect>

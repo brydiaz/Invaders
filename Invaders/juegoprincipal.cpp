@@ -12,7 +12,8 @@ JuegoPrincipal::JuegoPrincipal(QWidget *parent)
     , ui(new Ui::JuegoPrincipal)
 {
     ui->setupUi(this);
-
+    this->setWindowTitle("Invaders");
+    this->setWindowIcon(QIcon("://INVADERS.PNG"));
     generarTableroGrafico();
     generarJugador();
     generarEnemigos();
@@ -84,7 +85,7 @@ void JuegoPrincipal::keyPressEvent(QKeyEvent *e){
            Tropa *bala= new Tropa (matrizGrafica[jugador->posx-1][jugador->posy]->representacion, false);
            bala->posx=jugador->posx-1;
            bala->posy=jugador->posy;
-           bala->representacion->setIcon(QIcon("://blast.png"));
+           bala->representacion->setIcon(QIcon("://balaEnemigo.png"));
            matrizGrafica[bala->posx][bala->posy]->representacion->setIcon(bala->representacion->icon());
            this->bala=bala;
            }
@@ -140,7 +141,7 @@ void JuegoPrincipal::hiloBala(){
                enemigos[posx-1]->isOn=false;
                matrizGrafica[posx][posy]->isOn=false;
                controlDisparo=0;
-               matrizGrafica[posx][posy]->representacion->setIcon(QIcon("://fondoNegroPoVacias.jpg"));
+               matrizGrafica[posx][posy]->representacion->setIcon(QIcon("://enemigoDestruido.png"));
 
                bala->representacion->setIcon(QIcon("://fondoNegroPoVacias.jpg"));
                bala=nullptr;
@@ -149,7 +150,7 @@ void JuegoPrincipal::hiloBala(){
                 controlDisparo=1;
                 matrizGrafica[bala->posx][bala->posy]->representacion->setIcon(QIcon("://fondoNegroPoVacias.jpg"));
                 bala->posx-=1;
-                matrizGrafica[bala->posx][bala->posy]->representacion->setIcon(QIcon("://blast.png"));
+                matrizGrafica[bala->posx][bala->posy]->representacion->setIcon(QIcon("://balaEnemigo.png"));
                 bala->representacion= matrizGrafica[bala->posx][bala->posy]->representacion;
 
         }
